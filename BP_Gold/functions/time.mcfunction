@@ -1,3 +1,4 @@
+effect @e weakness infinite 1 true
 effect @e resistance infinite 5 true
 effect @e fire_resistance infinite 0 true
 
