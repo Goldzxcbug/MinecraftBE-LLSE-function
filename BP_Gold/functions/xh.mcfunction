@@ -15,7 +15,24 @@ execute if score "10" tick matches 5 if entity @a[tag="属性校准"] run functi
 # execute if score "tick" tick matches 19 run function sxjs
 
 execute if score "10" tick matches 6 run function time
+###############################钓鱼竿飞行判定########################################
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记"] run scoreboard players add @s tygcd -1
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记",scores={tygcd=1..}] at @s run tp @s ^^^-0.8
+#鱼竿枪粒子
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记",scores={tygcd=1..}] at @s if score @s tyglx matches 1 positioned ~~-99~ run particle minecraft:endrod ~~~  
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记",scores={tygcd=1..}] at @s if score @s tyglx matches 2 positioned ~~-99~ run particle minecraft:basic_crit_particle ~~~
 
+
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记",scores={tygcd=1..}] at @s positioned ~~-99.5~ unless score @s uuid = @p[r=2] uuid run tag @e[family=!inanimate,type=!item,r=1.5,scores={hp=1..},c=1] add gg
+
+execute if entity @e[tag=gg] as @e[tag=gg] at @s positioned ~~99.5~ as @a if score @s uuid = @e[c=1,r=1.5,type=boat] uuid positioned ~~-99.5~ run damage @e[tag=gg,c=1,r=1.5] 1 entity_attack entity @s
+
+execute if entity @e[type=minecraft:boat,tag=标记] as @e[type=minecraft:boat,tag=标记,scores={tygcd=1..}] at @s positioned ~~-99.5~ unless block ~~~ air run kill @s 
+execute if entity @e[type=minecraft:boat,tag=标记] as @e[type=minecraft:boat,tag=标记,scores={tygcd=..0}] run kill @s 
+execute if entity @a[tag=!tpsj] run kill @e[type=fishing_hook]
+execute if entity @e[tag=gg] as @e[tag=gg] at @s positioned ~~99.5~ run kill @e[c=1,type=boat,r=2]
+tag @e remove gg
+####################################################################################
 
 function xqcd
 
@@ -39,6 +56,8 @@ execute if score "tick" tick matches 19 as @a[scores={ksfyt=0,ksfy=1..}] run sco
 execute if score "tick" tick matches 19 as @a[scores={ksatkt=0,ksatk=1..}] run scoreboard players set @s ksatkt 0
 execute if score "tick" tick matches 19 as @a[scores={kshxt=0,kshx=1..}] run scoreboard players set @s kshx 0
 execute if score "tick" tick matches 19 as @a[scores={kshlt=0,kshl=1..}] run scoreboard players set @s kshl 0
+execute if score "tick" tick matches 19 as @a[scores={ksfyt=0,ksfy=1..}] run scoreboard players set @s ksfy 0
+execute if score "tick" tick matches 19 as @a[scores={ksatkt=0,ksatk=1..}] run scoreboard players set @s ksatk 0
 #怪物的回血回蓝
 execute if score "tick" tick matches 19 as @e[family=mob,scores={hp=1..,hx=1..,hp2=1..}] run scoreboard players operation @s hp += @s hx
 execute if score "tick" tick matches 19 as @e[family=mob,scores={hp=1..,hx=1..,hp2=1..}] run scoreboard players operation @s hp < @s hp2

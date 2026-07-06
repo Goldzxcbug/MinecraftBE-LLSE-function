@@ -75,13 +75,15 @@ function hxxt()
         let fy = st.getScore("fy")||0;//防御
         let ll = st.getScore("ll")||0;//灵力
         let bj = st.getScore("bj")||0;//暴击
-        let bs = st.getScore("bs")||0;//暴
+        let bs = st.getScore("bs")||0;//暴伤
         let mz = st.getScore("mz")||0;//命中
         let shxs = st.getScore("shxs")||0;//伤害吸收
         let atkjm = st.getScore("atkjm")||0;//攻击减免
         let xx = st.getScore("xx")||0;//吸血
         let zs = st.getScore("zs")||0;//真实伤害
         let sb = st.getScore("sb")||0;//闪避
+        atk += st.getScore("ksatk")||0;//buff攻击
+        fy += st.getScore("ksfy")||0;//buff防御
 
         // 主手武器判定（做存在性检查以防 null）
         try {
@@ -103,10 +105,11 @@ function hxxt()
                 case "minecraft:diamond_sword": atk+=10 ; st.setScore("wqlx",11) ; break;
                 case "minecraft:netherite_sword": atk+=13 ; st.setScore("wqlx",12) ; break;
                 case "minecraft:archer_pottery_sherd": if(aux==10) {atk+=15 ; st.setScore("wqlx",13)} ; break;//灵力枪
-                case "minecraft:flow_pottery_sherd": if(aux==10) {atk+=20 ; st.setScore("wqlx",13)} ; break;//灵力弯刀
-                case "minecraft:amethyst_cluster": if(aux==10) {atk=30 ; st.setScore("wqlx",14)} ; break;//碎发枪
+                case "minecraft:flow_pottery_sherd": if(aux==10) {atk+=20 ; st.setScore("wqlx",14)} ; break;//灵力弯刀
+                case "minecraft:amethyst_cluster": atk=30 ; st.setScore("wqlx",13) ; break;//碎发枪
                 default: st.setScore("wqlx",0); break;
             }
+
         } catch (e) {
             try{ st.setScore("wqlx",0);}catch(e){}
         }
@@ -149,6 +152,63 @@ function hxxt()
 
         return [atk,fy,ll,bj,bs,mz,zs,sb,shxs,atkjm,xx];
     }
+    
+    //检查武器切换 
+    function isSameItem(oldItem, newItem) { 
+        if (!oldItem && !newItem) return true;
+        if (!oldItem || !newItem) return false;
+        return oldItem.type === newItem.type
+            && oldItem.aux === newItem.aux
+            && oldItem.name === newItem.name;
+    }
+
+    function getWeaponDisplayType(item) {
+        if (!item) return null;
+        switch(item.type) {
+            case "minecraft:wooden_axe":
+            case "minecraft:stone_axe":
+            case "minecraft:iron_axe":
+            case "minecraft:golden_axe":
+            case "minecraft:diamond_axe":
+            case "minecraft:netherite_axe":
+            case "minecraft:wooden_sword":
+            case "minecraft:stone_sword":
+            case "minecraft:iron_sword":
+            case "minecraft:golden_sword":
+            case "minecraft:diamond_sword":
+            case "minecraft:netherite_sword":
+                return item.type;
+            // 下面钓鱼杆
+            case "minecraft:archer_pottery_sherd":
+            case "minecraft:flow_pottery_sherd":
+            case "minecraft:amethyst_cluster":
+                return "minecraft:fishing_rod";
+            default:
+                return null;
+        }
+    }
+
+    function refreshWeaponDisplay(player, item) {
+        const displayType = getWeaponDisplayType(item);
+        if (!displayType) return;
+
+        mc.runcmdEx(`replaceitem entity "${player.name}" slot.hotbar 0 ${displayType} 1 0 {"item_lock":{"mode":"lock_in_slot"}}`);
+        try {
+            const displayItem = player.getInventory().getItem(0);
+            if (displayItem && item.name) {
+                displayItem.setDisplayName(item.name);
+                player.refreshItems();
+            }
+        } catch(e) {}
+    }
+
+    mc.listen("onInventoryChange", (player, slotNum, oldItem, newItem) => {
+        if (slotNum !== 9 || isSameItem(oldItem, newItem)) return;
+
+        player.addEffect(18,20,100,false);
+        refreshWeaponDisplay(player, newItem);
+        playerscore(player);
+    });
 
     function modscore(st)
     {
@@ -361,18 +421,19 @@ const displayDamage = debounce((player,player_, sh, isCrit) => {
     mc.listen("onTick", () => {
         let players = mc.getOnlinePlayers();
         for(let i=0;i<players.length;i++){
-            let player = players[i];
+            let pl = players[i];
 
             const data ={
-                            "§c§l生命" : player.getScore("hp"),
-                            "§b§l灵力" : player.getScore("ll")  
+                            "§c§l生命" : pl.getScore("hp"),
+                            "§b§l灵力" : pl.getScore("ll")  
                         }
-            if(player.getScore("kshxt")>0) data[`§a§l恢复${player.getScore("kshx")}`] = -1*player.getScore("kshxt");
-            if(player.getScore("kshlt")>0) data[`§3§l回灵${player.getScore("kshl")}`] = -1*player.getScore("kshlt");
-            if(player.getScore("ksatkt")>0) data[`§4§l力量${player.getScore("ksatk")}`] = -1*player.getScore("ksatkt");
-            if(player.getScore("ksfyt")>0) data[`§e§l防御${player.getScore("ksfy")}`] = -1*player.getScore("ksfyt");
+            if(pl.getScore("kshxt")>0) data[`§a§l恢复${pl.getScore("kshx")}`] = -1*pl.getScore("kshxt");
+            if(pl.getScore("kshlt")>0) data[`§3§l回灵${pl.getScore("kshl")}`] = -1*pl.getScore("kshlt");
+            if(pl.getScore("ksatkt")>0) data[`§4§l力量${pl.getScore("ksatk")}`] = -1*pl.getScore("ksatkt");
+            if(pl.getScore("ksfyt")>0) data[`§e§l防御${pl.getScore("ksfy")}`] = -1*pl.getScore("ksfyt");
             if(Object.keys(data).length>2) data["§l§k------"] = 0;
-            player.setSidebar("----状态栏----",data);
+            // pl.removeSidebar();
+            pl.setSidebar("----状态栏----",data);
         }
     });
 
@@ -521,6 +582,7 @@ function dy() {
                 player.addScore("gftime", -60);
                 player.addScore("xwa",40);
                 return;
+            ////////////////////////////////////////////草药区/////////////////////////////////////////
             case "gold:cy_llh":
                 player.tell("你食用了 §r§f§l[§eD+§f]§9灵力§f花 ");
                 player.addScore("hp", -4);
@@ -537,6 +599,17 @@ function dy() {
                 player.addScore("hp", -10);
                 effect(player.getScore("kshx"),player.getScore("kshxt"),10,10,"hx",player);
                 return;
+            case "gold:cy_jjs":
+                player.tell("你食用了 §r§f§l[§gD+§f] §f§e金精§f参§f ");
+                player.addScore("hp", -500);
+                return;
+            case "gold:cy_xjr":
+                player.tell("你食用了 §r§f§l[§gD+§f] §f§4血蛟§b兰§f ");
+                player.addScore("hp", -50);
+                effect(player.getScore("ksatk"),player.getScore("ksstt"),30,60,"hx",player);
+                effect(player.getScore("ksfy"),player.getScore("ksfyt"),30,60,"fy",player);
+                return;
+            ////////////////////////////////////////////丹药区/////////////////////////////////////////
             case "gold:dy_cxd":
                 player.tell("你食用了 §r§f§l[§gD++§f]§4赤血§f丹 ");
                 player.addScore("hp", 400);

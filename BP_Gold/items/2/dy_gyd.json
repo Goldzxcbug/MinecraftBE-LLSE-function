@@ -11,7 +11,7 @@
     "components": {
       "minecraft:icon": "dy_gyd",
       "minecraft:display_name": {
-      "value": "§r§f§l[§aC§f] 丹药-§e罡元§f丹\n\n服用后力大无穷，刀枪不入\n\n§r§7食用后 ：\n§9+30 攻击（240s）\n+15 防御（240s）"
+      "value": "§r§f§l[§aC§f] 丹药-§e罡元§f丹\n\n服用后力大无穷，刀枪不入\n\n§r§7食用后 ：\n§9+30 力量（240s）\n+15 防御（240s）"
       },
       "minecraft:max_stack_size": 64,
       "minecraft:glint": true,
