@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:lq_llllz",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "prismarine_crystals",
+      "minecraft:hand_equipped": true,
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.3,
+        "movement_modifier": 0.35
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:lq_lld",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "snowball",
+      "minecraft:display_name": {
+      "value": "§r§f§l[§gD+§f] 丹药-§b玲珑§f丹\n\n服用后，心如琉璃，澄净通透\n增加功法领悟速度和小幅度修为\n\n§r§7食用后 ：\n§9+5   快速回复（60s）\n+5   快速回灵(60s)\n+60s 领悟速度\n+40  修为"
+      },
+
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 2,
+        "movement_modifier": 0.5
+      },
+      "minecraft:cooldown": {  
+        "category": "xw", 
+         "duration": 30
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:cy_xjr",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "flower_xjr",
+      "minecraft:display_name": {
+        "value": "§r§f§l[§gD+§f] §f§4血蛟§b兰§f\n\n血蛟兰，盛产于§a木属性§f洞天\n是做丹药的重要材料\n§2可以直接作为丹药吃\n\n§r§7饮食后：§9\n+30  力量（60s）\n+30  防御（60s）\n§4-50  生命"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 0.4,
+        "movement_modifier": 0.5
+      },
+      "minecraft:cooldown": {  
+        "category": "cy", 
+         "duration": 3
+      },
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

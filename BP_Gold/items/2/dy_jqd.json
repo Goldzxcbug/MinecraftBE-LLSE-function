@@ -1,0 +1,39 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:dy_jqd",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "slimeball",
+      "minecraft:display_name": {
+        "value": "§r§f§l[§gD+§f] 丹药-§a聚气§f丹\n\n温和蕴灵，固本培元，助引气入体，精进修为。\n\n§r§7食用后 ：\n§9+40~100 修为"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 10,
+        "movement_modifier": 0.7
+      },
+      "minecraft:cooldown": {  
+        "category": "xw", 
+         "duration": 1
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:cy_qxc",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "flower_rose",
+      "minecraft:display_name": {
+        "value": "§r§f§l[§gD§f] §f§c气血§f草\n\n气血§f草，盛产于§a木属性§f洞天\n是做丹药的重要材料\n§2可以直接作为丹药吃\n\n§r§7饮食后：§9\n+10  快速回血（10s）\n§4-10  生命"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 0.4,
+        "movement_modifier": 0.5
+      },
+      "minecraft:cooldown": {  
+        "category": "cy", 
+         "duration": 3
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

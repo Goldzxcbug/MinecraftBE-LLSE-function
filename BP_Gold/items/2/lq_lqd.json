@@ -1,0 +1,39 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:lq_lqd",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "fireball",
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 丹药-§a练气§f丹\n\n修为达标吃完后可以突破境界\n\n§r§4限制：（凡人-练气后期）\n\n§r§7食用后 ：\n§9突破最大境界"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 10,
+        "movement_modifier": 0.7
+      },
+      "minecraft:cooldown": {  
+        "category": "tp", 
+         "duration": 600
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

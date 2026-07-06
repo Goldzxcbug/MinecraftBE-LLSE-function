@@ -1,0 +1,39 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:dy_hcd",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "dy_hcd",
+      "minecraft:display_name": {
+      "value": "§r§f§l[§gD++§f] 丹药-§c回春§f丹\n\n服用后内伤渐愈，气血回升，紊乱气机得以平复。\n\n§r§7食用后 ：\n§9+13 快速回复（100s）"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 2,
+        "movement_modifier": 0.5
+      },
+      "minecraft:cooldown": {  
+        "category": "kshx", 
+         "duration": 20
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

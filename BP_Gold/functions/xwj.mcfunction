@@ -1,0 +1,21 @@
+tag @a remove 新玩家
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s hp2 200
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s hp 200
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s zq 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ll2 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ll 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s hx 1
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s bj 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s bs 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s zs 1
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s fy 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s atk 1
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s sb 1
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ls 100
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s dj 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s jy2 100
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s jy 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s tdqw 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ld 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ldjy 0
+execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ldjy2 100

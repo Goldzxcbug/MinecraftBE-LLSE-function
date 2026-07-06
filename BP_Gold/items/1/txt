@@ -1,0 +1,51 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:fr_hx", // 唯一ID，格式 "命名空间:物品名"
+      "menu_category": {           // 创意背包分类
+        "category": "equipment",   // 分类，可选 "equipment", "items", "food" 等
+        "group": "itemGroup.name.potion" // 子分组，显示在背包标签里
+      }
+    },
+    "components": {
+      "minecraft:icon": "redstone_dust", // 图标路径，可用内置或自定义图标
+      "minecraft:hand_equipped": true,   // 手持显示是否覆盖物品模型
+      "minecraft:max_stack_size": 64,    // 最大堆叠数量
+      "minecraft:glint": true,           // 是否显示附魔闪光效果
+
+      // 食物/饮料属性
+      "minecraft:food": {
+        "saturation_modifier": 5, // 饱和度增幅，可选 "low"/"medium"/"high" 或数字
+        "nutrition": 0,           // 恢复饱食值
+        "can_always_eat": true    // 是否允许满血/满饱食用
+      },
+
+      // 使用动画
+      "minecraft:use_animation": "drink", // 动画类型：eat/drink
+
+      // 使用属性（动作持续时间、移动影响等）
+      "minecraft:use_modifiers": {
+        "use_duration": 0.7,        // 使用时长（秒）
+        "movement_modifier": 0.35   // 使用时移动速度比例
+      },
+
+      "minecraft:allow_off_hand": false, // 是否允许副手使用
+      "tag:minecraft:is_food": {},        // 标记为食物，触发吃/喝效果
+      "events": {
+      "on_use": {
+        "sequence": [
+          {
+            "add_effect": {
+              "effect": "minecraft:regeneration", // 状态效果ID
+              "duration": 200,                   // 持续时间，单位tick（1秒=20tick）
+              "amplifier": 1 ,                      // 效果等级，0=一级, 1=二级...
+              "probability": 0.5                 //概率
+              }
+          }
+        ]
+      }
+      }
+    }
+  }
+}

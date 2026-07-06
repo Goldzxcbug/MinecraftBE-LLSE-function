@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header":{
+         "name": "§e§lGold包",
+         "description": "玄黄大世界，挂小你别来",
+         "uuid":"e2b8f178-dcb1-4676-a293-315e7903d199",
+         "version": [1,0,6],
+         "min_engine_version": [1,21,30]
+   },
+    "modules":[
+    {
+        "type": "resources",
+        "uuid": "2b70ca34-5831-4d37-8984-ea7015d0d3e6",
+        "version": [1,0,4]
+    }
+  ]
+}

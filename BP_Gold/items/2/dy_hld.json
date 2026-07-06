@@ -1,0 +1,39 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gold:dy_hld",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
+      }
+    },
+    "components": {
+      "minecraft:icon": "dy_hld",
+      "minecraft:display_name": {
+      "value": "§r§f§l[§gD++§f] 丹药-§b回灵§f丹\n\n服用后灵力如泉涌，周身经脉畅通，重振精神。\n\n§r§7食用后 ：\n§9+10 快速回灵（75s）"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": true,
+
+      "minecraft:food": {
+        "saturation_modifier": 20,
+        "nutrition": 20,
+        "can_always_eat": true
+      },
+
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 2,
+        "movement_modifier": 0.5
+      },
+      "minecraft:cooldown": {  
+        "category": "kshl", 
+         "duration": 20
+      },
+
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {}
+    }
+  }
+}

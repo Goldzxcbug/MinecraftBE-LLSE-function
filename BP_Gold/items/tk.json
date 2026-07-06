@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+  "identifier": "gold:tk"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "你干嘛，哎呦"
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head",
+        "dispensable": true,
+        "protection": 0
+      },
+      "minecraft:durability": {
+        "max_durability": 1
+      },
+      "minecraft:icon": "empty_armor_slot_helmet",
+      "minecraft:creative_group": "itemGroup.name.helmet"
+    }
+  }
+}

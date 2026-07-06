@@ -1,0 +1,10 @@
+{
+    "entry": "Gold.js",
+    "name": "Gold",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

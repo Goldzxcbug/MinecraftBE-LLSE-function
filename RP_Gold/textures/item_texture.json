@@ -1,0 +1,67 @@
+{
+  "texture_data": {
+    "flower_cornflower": {
+      "textures": "textures/items/flower_cornflower"
+    },
+    "flower_allium": {
+      "textures": "textures/items/flower_allium"
+    },
+    "flower_blue_orchid": {
+      "textures": "textures/items/flower_blue_orchid"
+    },
+    "flower_dandelion": {
+      "textures": "textures/items/flower_dandelion"
+    },
+    "flower_houstonia": {
+      "textures": "textures/items/flower_houstonia"
+    },
+    "flower_lily_of_the_valley": {
+      "textures": "textures/items/flower_lily_of_the_valley"
+    },
+    "flower_oxeye_daisy": {
+      "textures": "textures/items/flower_oxeye_daisy"
+    },
+    "flower_paeonia": {
+      "textures": "textures/items/flower_paeonia"
+    },
+    "flower_rose": {
+      "textures": "textures/items/flower_rose"
+    },
+    "flower_rose_blue": {
+      "textures": "textures/items/flower_rose_blue"
+    },
+    "flower_tulip_orange": {
+      "textures": "textures/items/flower_tulip_orange"
+    },
+    "flower_tulip_pink": {
+      "textures": "textures/items/flower_tulip_pink"
+    },
+    "flower_tulip_red": {
+      "textures": "textures/items/flower_tulip_red"
+    },
+    "flower_tulip_white": {
+      "textures": "textures/items/flower_tulip_white"
+    },
+    "flower_wither_rose": {
+      "textures": "textures/items/flower_wither_rose"
+    },
+    "flower_xjr": {
+      "textures": "textures/items/flower_xjr"
+    },
+      "flower_jjs": {
+      "textures": "textures/items/flower_jjs"
+    },
+      "dy_hld": {
+      "textures": "textures/items/dy_hld"
+      },
+      "dy_hcd": {
+      "textures": "textures/items/dy_hcd"
+      },
+      "dy_cxd": {
+      "textures": "textures/items/dy_cxd"
+      },
+      "dy_gyd": {
+      "textures": "textures/items/dy_gyd"
+      }
+  }
+}
