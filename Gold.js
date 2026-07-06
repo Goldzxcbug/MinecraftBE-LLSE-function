@@ -201,11 +201,18 @@ function hxxt()
             }
         } catch(e) {}
     }
+// 检查是否在手持栏的第一个位置上
+    function isHoldingHotbarFirst(player) {
+        try {
+            return isSameItem(player.getHand(), player.getInventory().getItem(0));
+        } catch(e) {
+            return true;
+        }
+    }
 
     mc.listen("onInventoryChange", (player, slotNum, oldItem, newItem) => {
         if (slotNum !== 9 || isSameItem(oldItem, newItem)) return;
 
-        player.addEffect(18,20,100,false);
         refreshWeaponDisplay(player, newItem);
         playerscore(player);
     });
@@ -434,6 +441,11 @@ const displayDamage = debounce((player,player_, sh, isCrit) => {
             if(Object.keys(data).length>2) data["§l§k------"] = 0;
             // pl.removeSidebar();
             pl.setSidebar("----状态栏----",data);
+
+            if(!isHoldingHotbarFirst(pl))
+            {
+                pl.addEffect(18,20,100,false);
+            }
         }
     });
 
