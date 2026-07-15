@@ -36,12 +36,12 @@ export function dy() {
         }
         mc.runcmdEx(`execute as "${player.name}" unless entity @s[tag=tpsj] run scriptevent usf:command hotbar 1`);
     }
-    mc.listen("onAte", (player, item) => {
-        switch (item.type) {
-            case "gold:fr_hx":
-                player.addScore("hp",100);
-                player.tell("你饮食了 §r§f§l[§gE+§f]§c生命§f丹 §r§4♥§f +100 ");
-                return;
+    mc.listen("onAte", (player, item) => {   //监听吃下了食物 返回我 玩家对象 和 物品对象
+        switch (item.type) { //使用 item 的 type 属性来判断吃下了什么食物
+            case "gold:fr_hx": //如果吃下了金色的苹果
+                player.addScore("hp",100); // 调用玩家对象的 addScore 方法，给玩家加 10 点hp的score
+                player.tell("你饮食了 §r§f§l[§gE+§f]§c生命§f丹 §r§4♥§f +100 "); // 调用玩家对象的 tell 方法，给玩家发送一条消息
+                return; // 结束 
             case "gold:fr_ys":
                 player.addEffect(16, 500*20, 1, false);
                 return;
