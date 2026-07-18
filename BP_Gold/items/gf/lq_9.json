@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_9",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§2C-§r] 星尘引气决§r\n\n吸收浩瀚星辉之力修炼\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+700  最大生命值\n§9+10   攻击\n§9+6   防御"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

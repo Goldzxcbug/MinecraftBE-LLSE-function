@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_1",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r§l[§gD++§f] §l§a练气功法-§9小衍水决\n\n§r§f凝水化气,润脉通经,周天循环,\n筑基之始。\n\n§7限制境界:练气期以上\n\n§9学习此功法可以：\n+50  最大灵力值\n+3   回灵速度"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

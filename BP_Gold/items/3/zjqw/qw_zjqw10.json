@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw10",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—山川百脉阵图\n§r§f\n万里山河入画图，百川地脉聚一书。\n阵起群峰连海岳，势穷天地亦难枯。\n\n§7放在背包时：\n§9突破筑基期时可以\n+10    防御\n+200    最大灵力值\n+20    回灵速度\n"
+      },
+      "minecraft:icon": "name_tag",
+      "minecraft:glint": true
+    }
+  }
+}

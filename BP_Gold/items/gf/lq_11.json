@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_11",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§gE§r] §l§a练气功法§r§l-厚土归元功§r\n\n厚土载物固本\n归元生生不息\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+300  最大生命值\n§9+5    防御"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_10",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§gD§r] 青木生长决§r\n\n汲取草木生机恢复自身\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+350  最大生命值\n§9+2    回复速度\n§9+2    回灵速度"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

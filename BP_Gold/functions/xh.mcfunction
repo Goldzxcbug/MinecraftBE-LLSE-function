@@ -27,8 +27,8 @@ execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat
 
 execute if entity @e[tag=gg] as @e[tag=gg] at @s positioned ~~99.5~ as @a if score @s uuid = @e[c=1,r=1.5,type=boat] uuid positioned ~~-99.5~ run damage @e[tag=gg,c=1,r=1.5] 1 entity_attack entity @s
 
-execute if entity @e[type=minecraft:boat,tag=标记] as @e[type=minecraft:boat,tag=标记,scores={tygcd=1..}] at @s positioned ~~-99.5~ unless block ~~~ air run kill @s 
-execute if entity @e[type=minecraft:boat,tag=标记] as @e[type=minecraft:boat,tag=标记,scores={tygcd=..0}] run kill @s 
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记",scores={tygcd=1..}] at @s positioned ~~-99.5~ unless block ~~~ air run kill @s 
+execute if entity @e[type=minecraft:boat,tag="标记"] as @e[type=minecraft:boat,tag="标记",scores={tygcd=..0}] run kill @s 
 execute if entity @a[tag=!tpsj] run kill @e[type=fishing_hook]
 execute if entity @e[tag=gg] as @e[tag=gg] at @s positioned ~~99.5~ run kill @e[c=1,type=boat,r=2]
 tag @e remove gg

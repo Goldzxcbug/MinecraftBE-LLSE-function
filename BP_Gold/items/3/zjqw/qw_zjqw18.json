@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw18",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aB§f] §2筑基奇物-§f不眠瞳\n\n昼夜睁目不闭，瞳中蕴火似星，\n燃尽杂念，照破幻境。\n得之者神识常明，魂魄坚凝，可清醒观道百日不眠，\n为凝炼道基之至宝。\n\n§r§7放在背包时 ：\n§9突破筑基期时可以\n永驻 §f夜视§9   效果\n永驻 §f速度II§9 效果\n+500 最大生命值\n+300 最大灵力值\n+25  回灵速度"
+      },
+      "minecraft:icon": "campfire",
+      "minecraft:glint": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:yy_1",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r§f§l[§3B+§f] §e元婴功法-§7千机玉寰金章§f\n\n感应万物气机，炼化共鸣天地\n避锋芒取生机，蕴己杀机\n采万气掩身，合道化天机\n\n§r§7限制境界：练气期以上\n\n§9学习此功法可以 ：\n§4-100 幸运\n§9+100 幸运"
+      },
+      "minecraft:icon": "paper"
+      ,"minecraft:glint": true
+    }
+  }
+}

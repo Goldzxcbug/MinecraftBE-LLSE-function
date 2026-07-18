@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "zj:zjqw2",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§2B§r] 筑基奇物—§c血眼\n\n§r§h古战场尸骸中凝出的暗红瞳石\n触之温热似含未冷怨念，凝视时心神微颤\n炼化后目力穿透迷雾瘴气，暗处视物如白昼\n气血翻涌时能提前察觉杀机，趋避无形之险\n\n§i放在背包时 ：\n§9突破筑基期可以\n永驻§f 夜视 §9效果\n+666  最大生命值\n+66   攻击\n+6%   吸血"
+      },
+      "minecraft:icon": "spider_eye",
+      "minecraft:glint": true
+    }
+  }
+}

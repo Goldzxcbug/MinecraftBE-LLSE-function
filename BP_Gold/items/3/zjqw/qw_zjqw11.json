@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw11",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—烈炎羽\n§r§f\n赤羽飘零火自生，怒心一动焚长空。\n炎光展翼惊云外，一缕飞灰落晚风。\n\n§7放在背包时：\n§9突破筑基期时可以\n+91    攻击\n+10    真实伤害\n+30%    暴伤\n§4-400    最大生命值"
+      },
+      "minecraft:icon": "feather",
+      "minecraft:glint": true
+    }
+  }
+}

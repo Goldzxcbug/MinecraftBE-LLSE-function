@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw9",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—听潮玉简\n§r§f\n玉简横陈听海声，潮生潮落刻枯荣。\n一篇写尽千秋浪，静坐犹闻万壑鸣。\n\n§7放在背包时：\n§9突破筑基期时可以\n+650    最大生命值\n+120    最大灵力值\n+10    回灵速度"
+      },
+      "minecraft:icon": "name_tag",
+      "minecraft:glint": true
+    }
+  }
+}

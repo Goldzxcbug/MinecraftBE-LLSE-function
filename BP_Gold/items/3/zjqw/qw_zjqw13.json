@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw13",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—灵怒火\n§r§f\n六欲为薪怒作炉，灵炎随心照幽都。\n喜悲惧思皆成焰，火到极时心却无。\n\n§7放在背包时：\n§9突破筑基期时可以\n+60    攻击\n§4-5    回复速度\n§9+35%    暴击\n+50%    暴伤\n§4-30    防御"
+      },
+      "minecraft:icon": "campfire",
+      "minecraft:glint": true
+    }
+  }
+}

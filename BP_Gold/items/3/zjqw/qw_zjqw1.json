@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "zj:zjqw1",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§aC+§r] §f筑基奇物-§a青藤心露\n\n§r§f千年古藤断裂处渗出的汁液凝成的胶珠\n色泽莹绿如新叶，触之温润不冰\n凑近能闻到雨后林间的清润气息\n使得气血流转加快，伤口愈合速度远超常人\n\n§7放在背包时：\n§9突破筑基期时可以\n+600  最大生命值\n+50    回复速度"
+      },
+      "minecraft:icon": "diamond"
+      ,"minecraft:glint": true
+    }
+  }
+}

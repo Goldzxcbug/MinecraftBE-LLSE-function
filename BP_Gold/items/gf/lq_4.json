@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_4",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§gD§r] 烘炉功§r\n\n轰击体内密藏攫取力量修行\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+10  攻击\n§4-75  最大生命值\n-1   防御"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

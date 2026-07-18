@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw16",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§3B+§f] §2筑基奇物-§0天煞剑意§f\n\n狂暴黑煞伴疯癫剑意\n自成螺旋扭曲之力撕乱丹田灵气\n煞气宏动若噬心\n唯凭蓝炎稳定方可助筑基成道。\n\n§r§7放在背包时 ：\n§9突破筑基期时可以\n§4-100 最大生命值\n§4-100 最大灵力值\n§4-5   回复速度\n§4-1   回灵速度\n§9+100 攻击\n§9+20% 暴击\n§9+99% 暴伤"
+      },
+      "minecraft:icon": "campfire",
+      "minecraft:glint": true
+    }
+  }
+}

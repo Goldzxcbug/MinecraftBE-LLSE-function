@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw7",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—无相天章\n§r§f\n无字天书落九霄，万般道法一朝消。\n有形皆是红尘相，心照空明见本真。\n\n§7放在背包时：\n§9突破筑基期时可以\n+300    最大灵力值\n+15    回灵速度\n+5    闪避\n§4-20    攻击"
+      },
+      "minecraft:icon": "book",
+      "minecraft:glint": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_20",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§2C-§r] §l§a练气功法§r§l-八荒镇海桩§r\n\n八荒镇海定乾坤,镇压四海平风波\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+700  最大生命值\n§9+4    回复速度\n§9站立不动五秒后进入地面\n§9此时可获得:\n§9+20   攻击\n§9+20   防御"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

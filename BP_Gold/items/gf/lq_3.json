@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_3",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§gD+§r] 玄黄练心决§r\n\n碾碎杂念化作养料并时刻增强精神\n\n§i限制境界：练气期及以上\n§9学习此功法可以：\n+350  最大生命值\n+8   攻击\n+5    防御"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}

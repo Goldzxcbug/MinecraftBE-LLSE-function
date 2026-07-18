@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw15",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC+§f] §2筑基奇物-§f锈剑道玄\n\n锈迹斑斑，剑身残缺，\n却隐隐散发古老剑意。\n其内藏玄道碎片，沉寂万载，\n一旦祭炼，剑意冲霄，可助修士构筑无上道基。\n\n§r§7放在背包时 ：\n§9突破筑基期时可以\n+20  防御\n+20  攻击\n+10% 吸血"
+      },
+      "minecraft:icon": "campfire",
+      "minecraft:glint": true
+    }
+  }
+}

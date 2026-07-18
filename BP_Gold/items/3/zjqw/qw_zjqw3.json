@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "zj:zjqw3",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§cC§r] §4筑基奇物—黄苹果\n\n天地有*** 日夜***\n**这不就*普通苹果吗，为什么叫黄苹果?\n汲命衍寿果 服之可长生\n放在背这不是黄苹果吗包时 :\n突破筑基期可以\n+500  最大生命值\n+10    回复速度\n+10    回灵速度\n+10    防御\n§c不要相信红字\n全部都是假的\n放在背包是 ;\n\n突破筑基期可以这就是黄苹果\n-500  最大生命值\n-10    回复速度只是一个普通的苹果而已\n-10    回灵速度\n-⑩     防御\n§r--------------------------------\n§h突破筑基期可以 :\n§9+01110.010  最大生命值\n+011.10101  防御\n011.01111  回复速度\n+011.01101  回灵速度\n+ 01.110101  吸血"
+      },
+      "minecraft:icon": "apple",
+      "minecraft:glint": true
+    }
+  }
+}

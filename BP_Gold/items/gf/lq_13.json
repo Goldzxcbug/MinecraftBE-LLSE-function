@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:lq_13",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§gD+§r] §l§a练气功法§r§l-坐山诀§r\n\n坐山享其成\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+400  最大生命值\n§9+3    防御\n§9+3    回复速度"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}
+

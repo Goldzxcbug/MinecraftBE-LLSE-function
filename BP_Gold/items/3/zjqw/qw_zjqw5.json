@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw5",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+        "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—飘零梅\n§r§f\n雪覆千山冷，梅开一树新。\n寒枝栖瘦影，何日返故林？\n\n§7放在背包时：\n§9突破筑基期时可以\n+20    真实伤害\n+10    回复速度\n+70%    暴伤\n§4-300    最大生命值"
+      },
+      "minecraft:icon": "wheat",
+      "minecraft:glint": true
+    }
+  }
+}

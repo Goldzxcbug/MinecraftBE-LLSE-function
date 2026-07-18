@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw19",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC+§f] §2筑基奇物-§b沧海珠§f\n\n有沧海逝，自有沧海生。\n\n§r§7放在背包时 ：\n§9突破筑基期时可以\n+1333 最大灵力值"
+      },
+      "minecraft:icon": "campfire",
+      "minecraft:glint": true
+    }
+  }
+}

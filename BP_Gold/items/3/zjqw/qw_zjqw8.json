@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw8",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—赤曜古藤\n§r§f\n赤藤盘日饮金乌，枝走熔岩叶吐朱。\n根系地心千载火，花开一瞬焚天炉。\n\n§7放在背包时：\n§9突破筑基期时可以\n+30    攻击\n+25    回复速度\n+10%    吸血\n§4-400    最大生命值"
+      },
+      "minecraft:icon": "sweet_berries",
+      "minecraft:glint": true
+    }
+  }
+}

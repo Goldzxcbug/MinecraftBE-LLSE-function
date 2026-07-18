@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "zj:zjqw12",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—行云碑\n§r§f\n石碑无语云自行，春风化雨润无声。\n聚散由心身似幻，长空万里不留形。\n\n§7放在背包时：\n§9突破筑基期时可以\n+450    最大生命值\n+75    防御"
+      },
+      "minecraft:icon": "netherite_upgrade_smithing_template",
+      "minecraft:glint": true
+    }
+  }
+}
