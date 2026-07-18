@@ -307,31 +307,33 @@ const displayDamage = debounce((player,player_, sh, isCrit) => {
                     let str = "";
                     switch(player.getScore("dj"))
                     {
-                        case 1: case 2: case 3: case 4 : str += `§a§l练气修士§f${player.name},凡修道${player.getScore("day")}载`; break;
-                        case 5: case 6: case 7: case 8 : str += `§7§l筑基修士§f${player.name},凡修道${player.getScore("day")}载`; break;
-                        case 9: case 10: case 11: case 12 : str += `§g§l金丹修士§f${player.name},凡修道${player.getScore("day")}载`; break;
-                        case 13: case 14: case 15: case 16 : str += `§e§l元婴修士§f${player.name},凡修道${player.getScore("day")}载`; break;
-                        case 17: case 18: case 19: case 20 : str += `§6§l化神修士§f${player.name},凡修道${player.getScore("day")}载`; break;
-                        case 21: case 22: case 23: case 24 : str += `§4§l合道修士§f${player.name},凡修道${player.getScore("day")}载`; break;
+                        case 1: case 2: case 3: case 4 : str += `§a§l练气修士§f ${player.name} ,凡修道 ${player.getScore("day")} 载`; break;
+                        case 5: case 6: case 7: case 8 : str += `§7§l筑基修士§f ${player.name} ,凡修道 ${player.getScore("day")} 载`; break;
+                        case 9: case 10: case 11: case 12 : str += `§g§l金丹修士§f ${player.name} ,凡修道 ${player.getScore("day")} 载`; break;
+                        case 13: case 14: case 15: case 16 : str += `§e§l元婴修士§f ${player.name} ,凡修道 ${player.getScore("day")} 载`; break;
+                        case 17: case 18: case 19: case 20 : str += `§6§l化神修士§f ${player.name} ,凡修道 ${player.getScore("day")} 载`; break;
+                        case 21: case 22: case 23: case 24 : str += `§4§l合道修士§f ${player.name} ,凡修道 ${player.getScore("day")} 载`; break;
                         default: break;
                     }
-                    if(player.getScore("dj")>4) str += `以奇物${zjqw(player.getScore("tdqw"))}§l成就道基`
-                    if(player.getScore("dj")>8) str += `以${gf(player.getScore("gf"))}§l成就金丹`
-                    //if(player.getScore("dj")>12) str += `,夺${zjqw(player.getScore("tdqw3"))}以成元婴`
-                    //if(player.getScore("dj")>16) str += `,抽${zjqw(player.getScore("tdqw4"))}以化其神`
-                    //if(player.getScore("dj")>20) str += `,祭${zjqw(player.getScore("tdqw5"))}已身合道·
+                    if(player.getScore("dj")>4) str += `以奇物 ${zjqw(player.getScore("tdqw"))} §l成就道基`
+                    if(player.getScore("dj")>8) str += `以 ${gf(player.getScore("gf"))} §l成就金丹`
+                    //if(player.getScore("dj")>12) str += `,夺 ${zjqw(player.getScore("tdqw3"))} 以成元婴`
+                    //if(player.getScore("dj")>16) str += `,抽 ${zjqw(player.getScore("tdqw4"))} 以化其神`
+                    //if(player.getScore("dj")>20) str += `,祭 ${zjqw(player.getScore("tdqw5"))} 已身合道·
                     //str += `于***之地`
                     if(player_ && typeof player_.getScore === "function") {
                         let weaponName = "空手";
                         try {
                             const weapon = player_.getInventory().getItem(9);
-                            if (weapon && weapon.name) weaponName = weapon.name;
+                            if (weapon && weapon.name) {
+                                weaponName = String(weapon.name).split("\n")[0].replace(/\r$/, "");
+                            }
                         } catch(e) {}
-                        str += `被${player_.name}使用${weaponName}击杀,如今身死道消,还道于天!`
+                        str += `被 ${player_.name} 使用 ${weaponName}§r§l 击杀,如今身死道消,还道于天!`
                     }
                     else {
                         const sourceName = player_ && player_.name ? player_.name : "未知伤害";
-                        str  += `不慎被${sourceName}所杀,如今身死道消,还道于天!`
+                        str  += `不慎被 ${sourceName}§r§l 所杀,如今身死道消,还道于天!`
                     }
                     switch(player.getScore("dj"))
                     {

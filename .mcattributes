@@ -4,3 +4,4 @@ diagnostic.disable.behaviorpack.items.missing=true
 diagnostic.disable.minecraft.tag.missing=true
 diagnostic.disable.behaviorpack.item.components.texture_not_found=true
 diagnostic.disable.behaviorpack.item.custom_component_v2.min_version=true
+diagnostic.disable.molang.error.unknown=true
