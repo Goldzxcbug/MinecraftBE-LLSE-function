@@ -15,8 +15,6 @@ export function hxxt()
         let xx = st.getScore("xx")||0;//吸血
         let zs = st.getScore("zs")||0;//真实伤害
         let sb = st.getScore("sb")||0;//闪避
-        atk += st.getScore("ksatk")||0;//buff攻击
-        fy += st.getScore("ksfy")||0;//buff防御
 
         // 主手武器判定（做存在性检查以防 null）
         try {

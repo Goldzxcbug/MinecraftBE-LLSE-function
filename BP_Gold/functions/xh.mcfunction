@@ -10,8 +10,7 @@ function gw
 #攻击受击计算-hhxt核心系统
 # function hxxt
 execute if entity @a[tag=tpsj] run function tpsj
-execute if score "10" tick matches 5 if entity @a[tag=tp] run function djsx
-execute if score "10" tick matches 5 if entity @a[tag="属性校准"] run function djsx
+execute if score "10" tick matches 5 unless entity @a[tag=!tp,tag=!"属性校准",tag=!"法不可同修"] run function djsx
 # execute if score "tick" tick matches 19 run function sxjs
 
 execute if score "10" tick matches 6 run function time

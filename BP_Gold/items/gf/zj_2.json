@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50", 
+  "minecraft:item": {
+    "description": {
+      "identifier": "gf:zj_2",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.bed", 
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": { 
+        "minecraft:display_name": {
+        "value": "§r[§2C++§r] §l§7筑基功法§r§l-坐山决§r\n\n坐山享其成，一人得道，鸡犬升天。\n\n§i限制境界：练气及以上\n\n§9学习此功法可以：§5§l---该功法属性由在线人数线性决定---§r\n§9+100x  最大生命值\n§9+5x    回复速度\n§9+5x    回灵速度\n§9+5x   攻击"
+      },
+      "minecraft:icon": "book_normal"
+      ,"minecraft:glint": true
+    }
+  }
+}
