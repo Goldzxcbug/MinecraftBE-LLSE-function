@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD§r] §l§a练气功法§r§l-风息步§r\n\n引微风入体,化作风一般的刀刃\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+7   攻击\n§9+20   最大灵力值"
+        "value": "§r[§gD§r] §l§a练气功法§r§l-风息步§r\n\n引微风入体,化作风一般的刀刃\n\n§i限制境界：练气期及以上\n\n\n\n§e修行时间:  600s\n§e所需灵力: x2\n\n§9学习此功法可以：\n§9+7   攻击\n§9+20   最大灵力值"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true

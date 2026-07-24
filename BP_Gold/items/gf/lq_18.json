@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD++§r] §l§a练气功法§r§l-灵植共生法§r\n\n为什么我不是植物?我也好想像它们一样\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+1000 最大生命值\n§9+10   回复速度\n§4-10   攻击\n§4-3    防御"
+        "value": "§r[§gD++§r] §l§a练气功法§r§l-灵植共生法§r\n\n为什么我不是植物?我也好想像它们一样\n\n§i限制境界：练气期及以上\n\n\n\n§e修行时间:  600s\n§e所需灵力: x2\n\n§9学习此功法可以：\n§9+1000 最大生命值\n§9+10   回复速度\n§4-10   攻击\n§4-3    防御"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true

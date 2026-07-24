@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD+§r] §l§a练气功法§r§l-大日金乌诀§r\n\n烈阳之下，天空之上\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+1    攻击\n§9+1    攻击\n§9+1    攻击\n§9+1    攻击\n§9+1    攻击\n§9+800  最大生命值"
+        "value": "§r[§gD+§r] §l§a练气功法§r§l-大日金乌诀§r\n\n烈阳之下，天空之上\n\n§i限制境界：练气期及以上\n\n\n\n§e修行时间:  600s\n§e所需灵力: x2\n\n§9学习此功法可以：\n§9+1    攻击\n§9+1    攻击\n§9+1    攻击\n§9+1    攻击\n§9+1    攻击\n§9+800  最大生命值"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true

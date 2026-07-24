@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gE§r] §l§a练气功法§r§l-聚灵纳气诀§r\n\n最基础的功法...\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+400  最大生命值\n§9+4    攻击\n§9+2    防御"
+        "value": "§r[§gE§r] §l§a练气功法§r§l-聚灵纳气诀§r\n\n最基础的功法...\n\n§i限制境界：练气期及以上\n\n\n\n§e修行时间:  600s\n§e所需灵力: x2\n\n§9学习此功法可以：\n§9+400  最大生命值\n§9+4    攻击\n§9+2    防御"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true

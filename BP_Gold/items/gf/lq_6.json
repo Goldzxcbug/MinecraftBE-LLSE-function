@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD++§r] 造化烘炉功§r\n\n天人感应天地烘炉与人体共鸣\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§4-150  最大生命值\n-5   防御\n§9+20   攻击"
+        "value": "§r[§gD++§r] 造化烘炉功§r\n\n天人感应天地烘炉与人体共鸣\n\n§i限制境界：练气期及以上\n\n\n\n§e修行时间:  1000s\n§e所需灵力: x5\n\n§9学习此功法可以：\n§4-150  最大生命值\n-5   防御\n§9+20   攻击"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true

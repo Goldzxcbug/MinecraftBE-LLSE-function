@@ -1,3 +1,4 @@
+//禁止使用的命令
 const DEFAULT_BANNED_COMMANDS = [
     "sm",
     "Sm",

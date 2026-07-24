@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§eE++§r] 破阵子§r\n\n扇形爆发激活练气期灵力\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+7   攻击"
+        "value": "§r[§eE++§r] 破阵子§r\n\n扇形爆发激活练气期灵力\n\n§i限制境界：练气期及以上\n\n\n\n§e修行时间:  400s\n§e所需灵力: x2\n\n§9学习此功法可以：\n§9+7   攻击"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true

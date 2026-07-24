@@ -443,6 +443,7 @@ if (player.getScore("gf") >= 1) {
         stra += `\n§3▪ §l§f修行玩家：§r ${sameGfPlayers.map(p => p.name).join("§7, §f")}`;
     }
 }
+
 if (player) player.setTitle(`${stra}`, 4);
         }
         return;
