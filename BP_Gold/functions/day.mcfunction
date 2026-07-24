@@ -31,13 +31,13 @@ execute if score daytime day matches 24000.. run scoreboard players add @a[score
 execute if score daytime day matches 24000.. run scoreboard players add @a[scores={rw=..29,rwa=30}] day 1 
 execute if score daytime day matches 24000.. run scoreboard players add @a[tag=xhqxz] zq 0
 execute if score daytime day matches 24000.. run scoreboard players add @a[tag=xhqxz,scores={zq=0..19}] zq 10
-execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n\n\n                §e§l瘴气-10"}]}
+execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n                §e§l瘴气-10"}]}
 execute if score daytime day matches 24000.. run scoreboard players add @a[tag=xhqxz,scores={zq=20..29}] zq 5
-execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n\n\n                §e§l瘴气-5"}]}
+execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n                §e§l瘴气-5"}]}
 execute if score daytime day matches 24000.. run scoreboard players add @a[tag=xhqxz,scores={zq=30..40}] zq 3
-execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n\n\n                §e§l瘴气-3"}]}
+execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n                §e§l瘴气-3"}]}
 execute if score daytime day matches 24000.. run scoreboard players add @a[tag=xhqxz,scores={zq=41..50}] zq 2
-execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n\n\n                §e§l瘴气-2"}]}
+execute if score daytime day matches 24000.. run titleraw @a[tag=xhqxz,scores={zq=0..20}] title {"rawtext":[{"text":"\n\n                §e§l瘴气-2"}]}
 execute if score daytime day matches 24000.. run scoreboard players add day day 1
 execute if score daytime day matches 24000.. run weather clear 24000
 execute if score daytime day matches 24000.. run fog @a remove day

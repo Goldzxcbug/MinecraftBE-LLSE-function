@@ -164,25 +164,25 @@ execute as @a[scores={gf=20,gftime=1..},tag=gf] if score @s ll matches 2.. run s
 execute as @a[scores={gf=20,gftime=1..},tag=gf] if score @s ll matches 2.. run scoreboard players add @s ll -2
 
 #####################生死禅功(上卷)
-execute as @a[hasitem={item=gf:zj_1_s,location=slot.weapon.mainhand},scores={gf=0,dj=1..},tag=!gf,rxm=89] run scoreboard players set @s gftime 1200
-execute as @a[hasitem={item=gf:zj_1_s,location=slot.weapon.mainhand},scores={gf=0,dj=1..},tag=!gf,rxm=89] run scoreboard players set @s gf 99
-execute as @a[hasitem={item=gf:zj_1_s,location=slot.weapon.mainhand},scores={gf=99,dj=1..},tag=!gf,rxm=89] run clear @s gf:zj_1_s 0 1
+execute as @a[hasitem={item=gf:zj_1_s,location=slot.weapon.mainhand},scores={gf=0,dj=5..},tag=!gf,rxm=89] run scoreboard players set @s gftime 1200
+execute as @a[hasitem={item=gf:zj_1_s,location=slot.weapon.mainhand},scores={gf=0,dj=5..},tag=!gf,rxm=89] run scoreboard players set @s gf 99
+execute as @a[hasitem={item=gf:zj_1_s,location=slot.weapon.mainhand},scores={gf=99,dj=5..},tag=!gf,rxm=89] run clear @s gf:zj_1_s 0 1
 execute as @a[scores={gf=99,gftime=1200}] run tag @s add gf
 execute as @a[scores={gf=99,gftime=1..},tag=gf] if score @s ll matches 7.. run scoreboard players add @s gftime -1
 execute as @a[scores={gf=99,gftime=1..},tag=gf] if score @s ll matches 7.. run scoreboard players add @s ll -7
 
 #####################生死禅功(下卷)
-execute as @a[hasitem={item=gf:zj_1_x,location=slot.weapon.mainhand},scores={gf=0,dj=1..},tag=!gf,rxm=89] run scoreboard players set @s gftime 200
-execute as @a[hasitem={item=gf:zj_1_x,location=slot.weapon.mainhand},scores={gf=0,dj=1..},tag=!gf,rxm=89] run scoreboard players set @s gf 100
-execute as @a[hasitem={item=gf:zj_1_x,location=slot.weapon.mainhand},scores={gf=100,dj=1..},tag=!gf,rxm=89] run clear @s gf:zj_1_x 0 1
+execute as @a[hasitem={item=gf:zj_1_x,location=slot.weapon.mainhand},scores={gf=0,dj=5..},tag=!gf,rxm=89] run scoreboard players set @s gftime 200
+execute as @a[hasitem={item=gf:zj_1_x,location=slot.weapon.mainhand},scores={gf=0,dj=5..},tag=!gf,rxm=89] run scoreboard players set @s gf 100
+execute as @a[hasitem={item=gf:zj_1_x,location=slot.weapon.mainhand},scores={gf=100,dj=5..},tag=!gf,rxm=89] run clear @s gf:zj_1_x 0 1
 execute as @a[scores={gf=100,gftime=200}] run tag @s add gf
 execute as @a[scores={gf=100,gftime=1..},tag=gf] if score @s ll matches 2.. run scoreboard players add @s gftime -1
 execute as @a[scores={gf=100,gftime=1..},tag=gf] if score @s ll matches 2.. run scoreboard players add @s ll -2
 
 #####################玄黄生死禅功
-execute as @a[hasitem={item=gf:zj_1,location=slot.weapon.mainhand},scores={gf=0,dj=1..},tag=!gf,rxm=89] run scoreboard players set @s gftime 1200
-execute as @a[hasitem={item=gf:zj_1,location=slot.weapon.mainhand},scores={gf=0,dj=1..},tag=!gf,rxm=89] run scoreboard players set @s gf 101
-execute as @a[hasitem={item=gf:zj_1,location=slot.weapon.mainhand},scores={gf=101,dj=1..},tag=!gf,rxm=89] run clear @s gf:zj_1 0 1
+execute as @a[hasitem={item=gf:zj_1,location=slot.weapon.mainhand},scores={gf=0,dj=5..},tag=!gf,rxm=89] run scoreboard players set @s gftime 1200
+execute as @a[hasitem={item=gf:zj_1,location=slot.weapon.mainhand},scores={gf=0,dj=5..},tag=!gf,rxm=89] run scoreboard players set @s gf 101
+execute as @a[hasitem={item=gf:zj_1,location=slot.weapon.mainhand},scores={gf=101,dj=5..},tag=!gf,rxm=89] run clear @s gf:zj_1 0 1
 execute as @a[scores={gf=101,gftime=1200}] run tag @s add gf
 execute as @a[scores={gf=101,gftime=1..},tag=gf] if score @s ll matches 10.. run scoreboard players add @s gftime -1
 execute as @a[scores={gf=101,gftime=1..},tag=gf] if score @s ll matches 10.. run scoreboard players add @s ll -10
