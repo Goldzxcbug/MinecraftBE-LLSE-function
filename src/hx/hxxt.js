@@ -433,6 +433,16 @@ mc.listen("onScoreChanged", (player, num, name, disName) => {
 
 if (player.getScore("tdqw") >= 1) stra += `\n§3▪ §a筑基奇物：  §r ${zjqw(player.getScore("tdqw"))} §r`;
 if (player.getScore("gf") >= 1) stra += `\n${gf(player.getScore("gf"))}`;
+//法不可同修
+if (player.getScore("gf") >= 1) {
+    const myGf = player.getScore("gf");
+    const sameGfPlayers = mc.getOnlinePlayers().filter(p =>
+        p.getScore("gf") === myGf && (p.xuid || p.name) !== (player.xuid || player.name)
+    );
+    if (sameGfPlayers.length > 0) {
+        stra += `\n§3▪ §l§f修行玩家：§r ${sameGfPlayers.map(p => p.name).join("§7, §f")}`;
+    }
+}
 if (player) player.setTitle(`${stra}`, 4);
         }
         return;

@@ -480,7 +480,7 @@ execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run s
 # 不眠瞳有常驻夜视和速度效果，直接在校准阶段补效果。
 # execute if entity @a[tag="属性校准"] as @a[tag="属性校准"] run tag @s add 属性校准a
 execute if entity @a[tag="属性校准"] run tag @a[tag="属性校准"] remove "属性校准"
-execute if entity @a[tag="法不可同修"] run tag @a[tag="属性校准"] remove "属性校准"
+execute if entity @a[tag="法不可同修"] run tag @a[tag="法不可同修"] remove "法不可同修"
 # execute as @a[tag=属性校准a] run scoreboard players add @s atk 0
 # execute as @a[tag=属性校准a] run scoreboard players add @s fy 0
 # execute as @a[tag=属性校准a] run scoreboard players add @s hp2 0

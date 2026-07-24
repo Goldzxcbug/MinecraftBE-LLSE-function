@@ -79,6 +79,12 @@ export function gf(num){
         case 18: return "§4▪ §2练气功法：  §r 【§b灵植共生法§r】§r";
         case 19: return "§4▪ §2练气功法：  §r 【§b聚灵纳气诀§r】§r";
         case 20: return "§4▪ §2练气功法：  §r 【§b八荒镇海桩§r】§r";
+        case 99: return "§4▪ §7筑基功法：  §r 【§b生死禅功(上卷)§r】§r";
+        case 100: return "§4▪ §7筑基功法：  §r 【§b生死禅功(下卷)§r】§r";
+        case 101: return "§4▪ §7筑基功法：  §r 【§b玄黄生死禅功§r】§r";
+        case 102: return "§4▪ §7筑基功法：  §r 【§b坐山决§r】§r";
+        case 103: return "§4▪ §7筑基功法：  §r 【§b沧海游龙功§r】§r";
+        case 102: return "§4▪ §7筑基功法：  §r 【§b身化他自在§r】§r";
         case 301: return "§4▪ §e元婴功法：  §r 【§e千机玉寰金章§r】§r";
         default: return "错误";
 

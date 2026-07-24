@@ -150,3 +150,19 @@ scoreboard objectives add wy dummy
 
 # 特殊状态
 scoreboard objectives add wqjx dummy  
+# 功法 
+scoreboard objectives add atkgf dummy
+scoreboard objectives add fygf dummy
+scoreboard objectives add hp2gf dummy
+scoreboard objectives add ll2gf dummy
+scoreboard objectives add hxgf dummy
+scoreboard objectives add hlgf dummy
+scoreboard objectives add bjgf dummy
+scoreboard objectives add bsgf dummy
+scoreboard objectives add mzgf dummy
+scoreboard objectives add sbgf dummy
+scoreboard objectives add zsgf dummy
+scoreboard objectives add xxgf dummy
+scoreboard objectives add xygf dummy
+scoreboard objectives add shxsgf dummy
+scoreboard objectives add gfrs dummy
