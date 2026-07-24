@@ -71,7 +71,7 @@ export function gf(num){
         case 10: return "§4▪ §2练气功法：  §r 【§b青木生长决§r】§r";
         case 11: return "§4▪ §2练气功法：  §r 【§b厚土归元功§r】§r";
         case 12: return "§4▪ §2练气功法：  §r 【§b庚金裂石决§r】§r";
-        case 13: return "§4▪ §2练气功法：  §r 【§b坐山诀§r】§r";
+        case 13: return "§4▪ §2练气功法：  §r 【§b爬山诀§r】§r";
         case 14: return "§4▪ §2练气功法：  §r 【§b风息步§r】§r";
         case 15: return "§4▪ §2练气功法：  §r 【§b藏剑术§r】§r";
         case 16: return "§4▪ §2练气功法：  §r 【§b五灵感气法§r】§r";
